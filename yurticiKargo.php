@@ -121,8 +121,6 @@
 				'onlyTracking' => true,
 			];
 
-			print_r($cargoData);
-
 			try{
 				return $this->query->queryShipment($cargoData);
 			}catch (Exception $e){
