@@ -10,7 +10,7 @@
 		'test'     => true //TEST MODE true / false
 	]);
 
-	//CREATE KARGO
+	//CREATE CARGO
 	$kargoYolla = $yurticı->createCargo([
 		'cargoKey'          => 'HSN-0000001',
 		'invoiceKey'        => 'TEST-0000001',
@@ -19,15 +19,15 @@
 		'receiverPhone1'    => '05414233558',
 	]);
 	print_r($kargoYolla);
-	//CREATE KARGO
+	//CREATE CARGO
 
-	//CREATE STATUS
+	//CARGO STATUS
 	$kargoDurum = $yurticı->cargoStatus([
 		'cargoKeys'     => 'KLSN-0000001',
 		'invoiceKey'    => 'TEST-0000001',
 	]);
 	print_r($kargoDurum);
-	//CREATE STATUS
+	//CARGO STATUS
 
 	//CANCEL CARGO
 	$kargoIptal = $yurticı->cancelCargo([
