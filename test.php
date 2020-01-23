@@ -4,14 +4,14 @@
 
 	use yurticiKargo\yurticiKargo;
 
-	$yurticı = new yurticiKargoEntegre([
+	$yurtici = new yurticiKargo([
 		'username' => 'XXXXXXXXXXX',
 		'password' => 'XXXXXXXXXXX',
 		'test'     => true //TEST MODE true / false
 	]);
 
 	//CREATE CARGO
-	$kargoYolla = $yurticı->createCargo([
+	$kargoYolla = $yurtici->createCargo([
 		'cargoKey'          => 'HSN-0000001',
 		'invoiceKey'        => 'TEST-0000001',
 		'receiverCustName'  => 'Hasan Yüksektepe',
@@ -22,7 +22,7 @@
 	//CREATE CARGO
 
 	//CARGO STATUS
-	$kargoDurum = $yurticı->cargoStatus([
+	$kargoDurum = $yurtici->cargoStatus([
 		'cargoKeys'     => 'KLSN-0000001',
 		'invoiceKey'    => 'TEST-0000001',
 	]);
@@ -30,7 +30,7 @@
 	//CARGO STATUS
 
 	//CANCEL CARGO
-	$kargoIptal = $yurticı->cancelCargo([
+	$kargoIptal = $yurtici->cancelCargo([
 		'cargoKeys'     => 'KLSN-0000001',
 		'invoiceKey'    => 'TEST-0000001',
 	]);

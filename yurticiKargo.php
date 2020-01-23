@@ -47,7 +47,7 @@
 				$url = $this->testRequest;
 			}
 
-			$this->query = new SoapClient($url);
+			$this->query = new \SoapClient($url);
 
 		}
 
