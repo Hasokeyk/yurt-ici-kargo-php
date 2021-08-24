@@ -1,6 +1,6 @@
 <?php
-
-	require "yurticiKargo.php";
+    
+    require "vendor/autoload.php";
 
 	use yurticiKargo\yurticiKargo;
 
@@ -20,19 +20,3 @@
 	]);
 	print_r($kargoYolla);
 	//CREATE CARGO
-
-	//CARGO STATUS
-	$kargoDurum = $yurtici->cargoStatus([
-		'cargoKeys'     => 'KLSN-0000001',
-		'invoiceKey'    => 'TEST-0000001',
-	]);
-	print_r($kargoDurum);
-	//CARGO STATUS
-
-	//CANCEL CARGO
-	$kargoIptal = $yurtici->cancelCargo([
-		'cargoKeys'     => 'KLSN-0000001',
-		'invoiceKey'    => 'TEST-0000001',
-	]);
-	print_r($kargoIptal);
-	//CANCEL CARGO

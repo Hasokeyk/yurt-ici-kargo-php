@@ -1,0 +1,23 @@
+{
+  "name": "hasokeyk/yurt-ici-kargo",
+  "authors": [
+    {
+      "name": "Hasan Yüksektepe",
+      "email": "hasanhasokeyk@hotmail.com",
+      "homepage": "https://hayatikodla.net",
+      "role": "Developer"
+    }
+  ],
+  "type": "library",
+  "keywords": ["Yurt içi kargo","Yurd içi kargo","Kargo"],
+  "homepage": "https://hayatikodla.net",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "guzzlehttp/guzzle":"^7.0.1",
+    "php": "^>=7.4"
+  },
+  "autoload": {
+    "files": ["src/yurticiKargo.php"]
+  }
+}
