@@ -3,9 +3,7 @@
     "description": "Bu kütüphane ile php alt yapılı sisteminize \"yurt içi kargo\" firmasına ait kargo işlemlerinizi entegre edebilirsiniz.",
     "type": "library",
     "autoload": {
-        "psr-4": {
-            "Hasokeyk\\YurtIciKargo\\": "src/"
-        }
+        "files": ["src/yurticiKargo.php"]
     },
     "authors": [
         {
