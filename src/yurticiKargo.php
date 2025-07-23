@@ -6,7 +6,7 @@
 
 	class yurticiKargo{
 
-		public $liveRequest = 'http://webservices.yurticikargo.com:8080/KOPSWebServices/ShippingOrderDispatcherServices?wsdl';
+		public $liveRequest = 'https://ws.yurticikargo.com/KOPSWebServices/ShippingOrderDispatcherServices?wsdl';
 		public $username;
 		public $password;
 		public $lang = 'TR';
@@ -14,7 +14,7 @@
 		public $testMode = false;
 
 		//TEST
-		public $testRequest     = 'http://testwebservices.yurticikargo.com:9090/KOPSWebServices/ShippingOrderDispatcherServices?wsdl';
+		public $testRequest     = 'http://webservices.yurticikargo.com:8080/KOPSWebServices/ShippingOrderDispatcherServices?wsdl';
 		public $testUsername    = 'YKTEST';
 		public $testPassword    = 'YK';
 		//TEST
